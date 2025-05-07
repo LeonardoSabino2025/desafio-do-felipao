@@ -45,10 +45,51 @@
       <div id="resultado" class="resultado"></div>
     </div>
 
-    <audio autoplay loop>
+    <audio autoplay loop id="backgroundMusic">
       <source src="music/WARCRAFT2_04.wav" type="audio/wav" />
       Seu navegador não suporta a tag de áudio.
     </audio>
+
+    <script>
+      const backgroundMusic = document.getElementById("backgroundMusic");
+      if (backgroundMusic) {
+        backgroundMusic.volume = 0.1; // Define o volume para 10% (baixinho)
+
+        // Adiciona um tratamento para a falha de autoplay (comum em navegadores modernos)
+        backgroundMusic.addEventListener("play", () => {
+          console.log("Música de fundo iniciou.");
+        });
+
+        backgroundMusic.addEventListener("error", (error) => {
+          console.error("Erro ao carregar ou reproduzir a música:", error);
+        });
+
+        // Uma tentativa adicional para garantir o loop (redundante com o atributo loop, mas pode ajudar em alguns casos)
+        backgroundMusic.addEventListener("ended", () => {
+          backgroundMusic.currentTime = 0;
+          backgroundMusic.play().catch((error) => {
+            console.error("Erro ao reiniciar a música:", error);
+          });
+        });
+
+        // Lidar com a política de autoplay (tentar iniciar a reprodução se falhar inicialmente)
+        document.addEventListener(
+          "click",
+          () => {
+            if (backgroundMusic.paused) {
+              backgroundMusic.play().catch((error) => {
+                console.error(
+                  "Erro ao tentar iniciar a música após clique:",
+                  error
+                );
+              });
+            }
+          },
+          { once: true }
+        ); // O listener é removido após o primeiro clique
+      }
+    </script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
