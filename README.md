@@ -38,17 +38,17 @@ Você pode visualizar este projeto diretamente no seu navegador através do segu
 
 ## 📂 Estrutura de Arquivos
 
-desafio-do-felipao/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── imgs/
-│   └── castle.jpg
-└── music/
-└── WARCRAFT2_04.ogg
-└── README.md
+* desafio-do-felipao/
+    * index.html
+    * css/
+        * style.css
+    * js/
+        * script.js
+    * imgs/
+        * castle.jpg
+    * music/
+        * WARCRAFT2_04.ogg
+    * README.md
 
 ## 🚀 Como Executar Localmente
 
