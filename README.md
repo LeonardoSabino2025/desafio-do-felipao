@@ -14,6 +14,7 @@ Você pode visualizar este projeto diretamente no seu navegador através do segu
 * **CSS:** Estilização completa da interface, incluindo layout, cores, tipografia personalizada (MedievalSharp do Google Fonts) e imagem de fundo temática.
 * **JavaScript:** Lógica de classificação do nível do herói, validação de entrada do usuário (nome e XP) e funcionalidades dinâmicas como o botão "Tentar outro Herói" e controle de volume da música de fundo.
 * **Fonte:** [MedievalSharp](https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap) (Google Fonts) para um visual temático.
+* **IA Generativa:** (https://app.leonardo.ai/ai-generations) Leonardo.AI para a geração da imagem de fundo.
 * **Imagem de Fundo:** `imgs/castle.jpg` - Uma imagem de castelo para criar uma atmosfera imersiva de fantasia.
 * **Música de Fundo:** `music/WARCRAFT2_04.ogg` - Uma faixa temática para ambientação, com controles de reprodução para o usuário.
 
