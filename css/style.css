@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+/* Seus outros estilos CSS abaixo */
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4; /* Cor de fundo fallback */
+  background-image: url("../imgs/castle.jpg");
+  background-size: cover; /* Cobrir toda a tela */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-attachment: fixed; /* Fixar a imagem no viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px 6px rgba(0, 0, 0, 0.6); /* Aumentei blur e spread, e um pouco a opacidade */
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Regra para aplicar a fonte ao h1 */
+.medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* O restante dos seus estilos */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.legenda-xp {
+  display: block;
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 5px;
+}
+.legenda-nome {
+  display: block;
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 5px;
+}
